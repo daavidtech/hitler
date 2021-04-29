@@ -32,6 +32,8 @@ func main() {
 		return
 	}
 
+	println("token: " + token)
+
 	// // Load the sound file.
 	// err := loadSound()
 	// if err != nil {
@@ -80,8 +82,10 @@ func main() {
 // the "ready" event from Discord.
 func ready(s *discordgo.Session, event *discordgo.Ready) {
 
-	// Set the playing status.
-	s.UpdateStatus(0, "!siegheil")
+	// s.UserUpdateStatus()
+
+	// // Set the playing status.
+	// s.UpdateStatus(0, "!siegheil")
 }
 
 // This function will be called (due to AddHandler above) every time a new
